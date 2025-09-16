@@ -1,0 +1,14 @@
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\bin\Debug\net9.0\Calculator.exe
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\bin\Debug\net9.0\Calculator.deps.json
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\bin\Debug\net9.0\Calculator.runtimeconfig.json
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\bin\Debug\net9.0\Calculator.dll
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\bin\Debug\net9.0\Calculator.pdb
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\Calculator.AssemblyInfoInputs.cache
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\Calculator.AssemblyInfo.cs
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\Calculator.dll
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\refint\Calculator.dll
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\Calculator.pdb
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\Calculator.genruntimeconfig.cache
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\ref\Calculator.dll
