@@ -12,3 +12,4 @@ C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug
 C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\Calculator.pdb
 C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\Calculator.genruntimeconfig.cache
 C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\ref\Calculator.dll
+C:\Users\alexk\OneDrive\Documents\GitHub\C-Sharp-Calculator\Calculator\obj\Debug\net9.0\Calculator.sourcelink.json

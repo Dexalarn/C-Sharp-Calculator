@@ -5,8 +5,8 @@ class Program
 {
 	static void Main(string[] args)
 	{
-	Console.WriteLine("Simple Console Calculator");
-	Console.WriteLine("Enter an expression (e.g., (2+2/2)-37 or 34+21-10*2/5):");
+		Console.WriteLine("Simple Console Calculator");
+		Console.WriteLine("Enter an expression (e.g., (2+2/2)-37, 2^3, or 34+21-10*2/5):");
 		string input = Console.ReadLine();
 
 		try
@@ -20,7 +20,7 @@ class Program
 		}
 	}
 
-	// Simple expression evaluator for +, -, *, /
+	
 	static double EvaluateExpression(string expr)
 	{
 		if (string.IsNullOrWhiteSpace(expr))
@@ -29,11 +29,41 @@ class Program
 		// Remove spaces
 		expr = expr.Replace(" ", "");
 
-	// Use DataTable.Compute for simplicity (n(ot for production use)
-	// Supports +, -, *, /, and parentheses (brackets)
-	// For more robust parsing, a real parser should be used
-	var table = new System.Data.DataTable();
-	object result = table.Compute(expr, "");
-	return Convert.ToDouble(result);
+		// Handle power operator (^), since DataTable.Compute does not support it
+		expr = EvaluatePowers(expr);
+
+		var table = new System.Data.DataTable();
+		object result = table.Compute(expr, "");
+		return Convert.ToDouble(result);
+	}
+
+	// Evaluates all ^ (power) operations in the expression string
+	static string EvaluatePowers(string expr)
+	{
+		// Regex to find patterns like number^number (e.g., 2^3, (2+1)^4)
+		var regex = new System.Text.RegularExpressions.Regex(@"(\([^()]+\)|[\d.]+)\^([\d.]+)");
+		while (regex.IsMatch(expr))
+		{
+			expr = regex.Replace(expr, match =>
+			{
+				string left = match.Groups[1].Value;
+				string right = match.Groups[2].Value;
+				double baseVal = 0;
+				// Evaluate left side if it's a parenthesis
+				if (left.StartsWith("(") && left.EndsWith(")"))
+				{
+					var table = new System.Data.DataTable();
+					baseVal = Convert.ToDouble(table.Compute(left, ""));
+				}
+				else
+				{
+					baseVal = Convert.ToDouble(left);
+				}
+				double expVal = Convert.ToDouble(right);
+				double powResult = Math.Pow(baseVal, expVal);
+				return powResult.ToString();
+			});
+		}
+		return expr;
 	}
 }
